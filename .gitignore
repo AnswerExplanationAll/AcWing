@@ -1,0 +1,35 @@
+# 通用规则 --------------------
+.DS_Store           # Mac系统文件
+Thumbs.db           # Windows缩略图
+*.log               # 所有日志文件
+*.tmp               # 临时文件
+~$*.docx            # Office临时文件
+
+# 开发环境 --------------------
+.env                # 环境变量文件(含敏感信息)
+.venv/              # Python虚拟环境
+node_modules/       # Node.js依赖目录
+__pycache__/        # Python编译缓存
+bin/                # 编译的二进制目录
+dist/               # 打包输出目录
+build/              # 构建目录
+
+# IDE配置文件 -----------------
+.idea/              # JetBrains IDE
+.vscode/            # VS Code配置
+*.suo               # Visual Studio用户选项
+
+# 语言特定 --------------------
+*.class             # Java字节码
+*.pyc               # Python字节码
+*.o                 # C编译对象
+*.out               # 可执行文件
+
+# 测试文件 --------------------
+/test-reports/      # 测试报告
+/coverage/          # 覆盖率报告
+
+# 自定义规则 --------------------
+/private/           # 忽略整个private目录
+config.local.*      # 本地配置文件
+*.bak               # 备份文件
